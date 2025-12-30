@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erfolgreich Verifiziert</title>
+    <style>
+        * { margin: 0; padding: 0; box-box-sizing: border-box; }
+        body {
+            background-color: #23272a; /* Discord Dark */
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #2c2f33;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-top: 5px solid #57F287; /* Discord Grün */
+            max-width: 450px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        .icon {
+            font-size: 60px;
+            color: #57F287;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        p {
+            color: #b9bbbe;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #5865F2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover {
+            transform: scale(1.05);
+            background-color: #4752c4;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">✔</div>
+        <h1>Erfolgreich verifiziert!</h1>
+        <p>Deine Autorisierung war erfolgreich. Du kannst dieses Fenster nun schließen und zu Discord zurückkehren.</p>
+        <p style="font-size: 13px; margin-top: 10px; color: #72767d;">Du wirst nun automatisch unserem Backup-System hinzugefügt.</p>
+        
+        <a href="https://discord.com/app" class="back-btn">Zurück zu Discord</a>
+    </div>
+
+</body>
+</html>
